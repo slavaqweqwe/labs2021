@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include <iostream>
+
 namespace testspace {
 	double Sin(double arg);
 }
