@@ -17,7 +17,7 @@ double testspace::Sin(double arg) {
 		degree += 2;
 		value_for_add *= -1.0 * arg_in_two / (degree * (degree - 1));
 
-		res_next += value_for_add;
+		res += value_for_add;
 	}
-	return res_next;
+	return res;
 }
