@@ -3,7 +3,7 @@
 
 #include <gtest/gtest.h>
 #include "my_sin.h"
-#define PI 3.1416
+constexpr double PI = 3.1416;
 
 TEST(sinlib_test, for_zero)
 {
