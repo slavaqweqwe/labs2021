@@ -9,15 +9,15 @@ double testspace::Sin(double arg) {
 
 	double arg_in_two = arg * arg;
 	double value_for_add = arg;
-	double res  = arg;
+	double result  = arg;
 	double degree = 1;
 
-	while (abs(value_for_add) > 0.0001) {
+	while (value_for_add > 0.0001 || value_for_add < -0.0001) {
 		
 		degree += 2;
 		value_for_add *= -1.0 * arg_in_two / (degree * (degree - 1));
 
-		res += value_for_add;
+		result += value_for_add;
 	}
-	return res;
+	return result;
 }
